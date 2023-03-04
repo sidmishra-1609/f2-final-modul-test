@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Blogging</title>
+
+</head>
+<body>
+    <div class="container">
+    <div>    
+        <ul>
+            <li style="margin-top: 20px;">Blogging Website</li>
+            <li style="float:right"><button class="active" id="btn">Create New Post</button></li>
+        </ul>
+    </div>
+    <div id="create-post">
+        <div class="heading">
+        <h2 style="color:#333333;">Create A Post</h2>
+        <div id="close-btn" style="color:red">X</div>
+        </div>
+    <div class="heading" style="width: 96%;">
+        <label for="post-title"></label>
+        <input type="text" id="post-title" placeholder="Enter Your heading..." style="padding:10px;" required>
+    </div>
+    <div>
+        <textarea id="blog-post" placeholder="Enter Your Blog Post..." required></textarea>
+        <div>
+            <button id="publish-btn">Publish Post</button>
+            <button id="cancel-btn">Cancel Post</button>
+        </div>
+    </div>
+    </div>
+    </div>
+    <div id="blog-read">
+    </div>
+   <script src="script.js"></script>
+</body>
+</html>
